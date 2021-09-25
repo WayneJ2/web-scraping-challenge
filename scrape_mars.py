@@ -65,8 +65,8 @@ def facts_scrape():
     htmlFacts = pd.read_html(url)
     strTable = htmlFacts[0].to_html(header=False, index=False)
     marsFacts = BeautifulSoup(strTable, "html.parser").prettify()    
-    
-    return print(marsFacts)
+    print(marsFacts)
+    return marsFacts
 
 def hemisphere_scrape():
     browser = init_browser()
