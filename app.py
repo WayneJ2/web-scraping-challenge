@@ -15,7 +15,7 @@ def index():
 def scraper():
     marsData = mongo.db.marsPull
     mars_data = scrape_mars.scrape()
-    print(mars_data)
+    # print(mars_data)
     marsData.update({}, mars_data, upsert=True)
     return redirect("/", code=302)
 

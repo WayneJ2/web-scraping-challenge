@@ -32,20 +32,24 @@
       height: 300px;
     }
     th,
-    td {
+    td {border: 2px solid black;
       padding-left: 5px;
       padding-right: 5px;
     }
     p {
       font-weight: bold;
-      font-size: medium;
+      font-size: large;
       text-align: center;
     }
     .description-header {
       text-align: center;
     }
     /* .table {border-style:groove;} */
-    /* .hem-photo {padding-left:50px ; } */
+    .hem-photo {display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%; }
+
   </style>
   <body>
     <div class="container">
@@ -81,44 +85,24 @@
           <table class="table">
             <tr style="font-size: 14px">
               <td>
-                <tr>
-                  <td>
-                    <img
-                      src="{{mars.hemiData[0].img_url}}"
-                      alt=""
-                      class="hem-photo"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td><p>{{mars.hemiData[0].title}}</p></td>
-                </tr>
+                <img src="{{mars.hemiData[0].img_url}}" alt="" class="hem-photo"/>
+                 <br/> <p>{{mars.hemiData[0].title}}</p>
+                
               </td>
               <td>
-                <img
-                  src="{{mars.hemiData[1].img_url}}"
-                  alt=""
-                  class="hem-photo"
-                />
-                <br />{{mars.hemiData[1].title}}
+                <img src="{{mars.hemiData[1].img_url}}" alt="" class="hem-photo"/>
+                <br/><p>{{mars.hemiData[1].title}}</p>
               </td>
             </tr>
             <tr style="font-size: 14px">
               <td>
-                <img
-                  src="{{mars.hemiData[2].img_url}}"
-                  alt=""
-                  class="hem-photo"
-                />
-                <br />{{mars.hemiData[2].title}}
+                <img src="{{mars.hemiData[2].img_url}}" alt="" class="hem-photo"/>
+                <br /><p>{{mars.hemiData[2].title}}</p>
               </td>
               <td>
                 <img
-                  src="{{mars.hemiData[3].img_url}}"
-                  alt=""
-                  class="hem-photo"
-                />
-                <br />{{mars.hemiData[3].title}}
+                  src="{{mars.hemiData[3].img_url}}" alt="" class="hem-photo"/>
+                <br /><p>{{mars.hemiData[3].title}}</p>
               </td>
             </tr>
           </table>
